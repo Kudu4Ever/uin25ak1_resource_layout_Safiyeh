@@ -1,1 +1,67 @@
-body{}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --primarycolor :#2A324B;
+    --secondarycolor: #58699D;
+    --bgcolor: #E1E5EE;
+    --white: #fff;
+
+    --font: 'Roboto', sans-serif;
+}
+
+h1{font-size: 2rem; font-weight: 800;} 
+p{font-size: 1.4rem;}
+
+body{
+    font-family: var(--font);
+    background-color: var(--bgcolor );
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 auto;
+
+} 
+
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-top: 120px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+nav ul li button{
+    background-color: var(--primarycolor);
+    border: none;
+    padding: 30px 79px;
+    color: var(--white);
+    font-family: var(--font);
+    font-weight: 800;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+nav ul li button:hover{
+    color: var(--primarycolor);
+    background-color: var(--white);
+    transition:ease-in-out .2s all  ;
+}
+nav ul li button:focus{
+    color: var(--primarycolor);
+    background-color: var(--white);
+}
+main{
+    margin: 0 26.5px;
+}
+main article{
+    background-color: var(--white);
+    margin: 0 auto;
+    padding: 30px 70px;
+    height: 350px;
+}
+
+main article ul li{
+    font-size: 1.5rem;
+}
